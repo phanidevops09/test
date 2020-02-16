@@ -1,0 +1,15 @@
+---
+-  hosts: localhost
+
+   tasks :
+   - name : Launching ec2
+     ec2 :
+         key_name: shaik
+         instance_type: t2.micro
+         image: ami-0d5d9d301c853a04a
+         region: us-east-2
+         group: launch-wizard-1
+         wait: yes
+         count: 1
+         vpc_subnet_id: subnet-c926af85
+         assign_public_ip: yes

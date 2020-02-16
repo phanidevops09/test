@@ -1,0 +1,8 @@
+---
+- hosts : test-servers
+  become: true
+
+  tasks :
+          - name : install apache web server
+            package : pkg=apache2 state=latest
+            

@@ -1,0 +1,16 @@
+---
+- hosts : web-servers
+  become: true
+
+  tasks :
+         - name : install nginx
+           package: pkg=nginx state =latest
+
+
+- hosts : db-servers
+  become: true
+
+  tasks :
+          - name : install mongodb
+            package : pkg=mongodb state =latest
+            

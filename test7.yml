@@ -1,0 +1,11 @@
+---
+-  hosts: localhost
+
+   tasks :
+   - name : stop ec2
+     ec2 :
+         instance_type: t2.micro
+         region: us-east-2
+         wait: True 
+         instance_ids : i-09bbd256b35c9b205
+         state : absent

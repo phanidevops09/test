@@ -1,0 +1,15 @@
+---
+- hosts : 18.222.159.200
+  become: true
+
+  tasks :
+          - name : delect  a dir
+            shell : rmdir  shaik
+
+
+- hosts : 3.133.97.237
+  become: true
+ 
+  tasks : 
+        - name : delect  a dir
+          shell: rmdir  phani  

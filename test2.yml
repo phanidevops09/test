@@ -1,0 +1,7 @@
+---
+- hosts :18.218.27.163
+  become: true
+
+  tasks :
+          - name : create a dir
+            shell : mkdir shaik
