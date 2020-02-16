@@ -6,8 +6,4 @@
    - name : install apache2
      package : pkg=apache2 state=latest
 
-     notify:
-       - start apache2
-       
-       
-       hi
+
